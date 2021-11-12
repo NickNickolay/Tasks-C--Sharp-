@@ -225,7 +225,7 @@ int result=withdrawRemainder ( numberFirst, numberSecond);
 System.Console.WriteLine($" Остаток {result}");*/
 
 //14. Найти третью цифру числа или сообщить, что её нет
-int n = new Random().Next(-1090,1000);
+/*int n = new Random().Next(-1090,1000);
 Console.WriteLine(n);
 if(Math.Abs(n)<100) Console.WriteLine("Нет третьей цифры");
 else
@@ -236,6 +236,7 @@ else
     char z = num[i];
     Console.WriteLine(z);
 }
+*/
 /*int a = new Random().Next(-555, 1000);
 int b = a / 100;
 Console.WriteLine($"Рандомное число {a}");
