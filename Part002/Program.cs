@@ -30,7 +30,7 @@ Console.Write($"Третья цифра числа {randomNumb}:\n {valueArr}");
 */
 //Почувствуй себя джуном
 
-//15. Дано число. Проверить кратно ли оно 7 и 23 +
+//15. Дано число. Проверить кратно ли оно 7 и 23 
 /*
 int a = new Random().Next(-1000, 1000);
 int ab = a % 7;
@@ -45,43 +45,33 @@ Console.WriteLine();
 if(ac==0) Console.WriteLine($"Случайное число {a} Кратно 23");
 else Console.WriteLine($"Случайное число {a} Не кратно 23 :(");
 */
-
-
-
+//Решение методом! (получилось, но необходимо решать еще!)
+/*
+void CardinalityCheck(int zch, int first, int second)
+{
+    if (zch % first == 0 && zch % second == 0) Console.WriteLine("Кратно обоим числам! :)");
+    else if (zch % first == 0) Console.WriteLine($"Кратно лишь {first} ;)");
+    else if (zch % second == 0) Console.WriteLine($"Кратно лишь {second} ;)");
+    else Console.WriteLine("Не кратно обоим :(");
+}
+int Zad = new Random().Next(-1000000, 1000000);
+int a = 7;
+int b = 23;
+Console.WriteLine($"Случайное число {Zad}");
+CardinalityCheck(Zad, a, b);
+*/
 //16. Дано число обозначающее день недели. Выяснить является номер дня недели выходным
-/* 
-Console.WriteLine("Введите номер деня недели: ");
-int a = Convert.ToInt32(Console.ReadLine());
-    if (a == 1)
-    {
-        Console.WriteLine("Monday");
-    }
-    if (a == 2)
-    {
-        Console.WriteLine("Tuesday");
-    }
-    if (a == 3)
-    {
-        Console.WriteLine("Wednesday");
-    }
-    if (a == 4)
-    {
-        Console.WriteLine("Thursday");
-    }
-    if (a == 5)
-    {
-        Console.WriteLine("Friday");
-    }
-    if (a == 6)
-    {
-        Console.WriteLine("Saturday");
-    }
-    if (a == 7)
-    {
-        Console.WriteLine("Sunday");
-    }
-    */
-
+/*
+bool WekDay(int Check)
+{
+    if (Check == 6 || Check == 7) return true;
+    else return false;
+}
+int Day = new Random().Next(1, 8);
+Console.WriteLine($"Случайное число {Day}");
+if (WekDay(Day)) System.Console.WriteLine($"Выходной {Day} :)");
+else System.Console.WriteLine($"Будний {Day} :(");
+*/
 //17. По двум заданным числам проверять является ли одно квадратом другого
 /*
 int a = 3;
@@ -90,22 +80,67 @@ if (a * a == b)
     Console.WriteLine("yes");
 else Console.WriteLine("no");
 */
-
+/*
+void sqareCheck(int a, int b)
+{
+    if (a * a == b) Console.WriteLine($"Число {a} является квадратом {b}");
+    else Console.WriteLine($"Число {a} не является квадратом {b}");
+    if(b*b==a) Console.WriteLine($"Число {b} является квадратом {a}");
+    else Console.WriteLine($"Число {b} не является квадратом {a}");
+}
+int c = new Random().Next(1, 1000);
+Console.WriteLine($"Первое случайное число {c}");
+int d = new Random().Next(1, 10000);
+Console.WriteLine($"Второе случайное число {d}");
+sqareCheck(c, d);
+*/
 //18. Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
 /*
 bool x = false;
-bool y = true;
+bool y = false;
 if(!(x || y) == !x && !y)
 Console.WriteLine("Верно!");
-else
-{
-    Console.WriteLine("Не верно!");
-}
+else Console.WriteLine("Не верно!");
 */
+/*
+bool TrueOrNot(bool x, bool y)
+{
+    if (!(x || y) == !x && !y) return true;
+    else return false;
+}
+bool a = true;
+bool b = false;
+if(TrueOrNot(a,b)) System.Console.WriteLine("Истина!");
+else System.Console.WriteLine("Ложь");
+*/
+
 //19. Определить номер четверти плоскости, в которой находится точка с координатами Х и У, причем X ≠ 0 и Y ≠ 0
-
+/*
+void PlaneSearch(int x, int y)
+{
+    if (x > 0 && y > 0) Console.WriteLine("Первая четверть");
+    if (x < 0 && y > 0) Console.WriteLine("Вторая четверть");
+    if (x < 0 && y < 0) Console.WriteLine("Третья четверть");
+    if (x > 0 && y < 0) Console.WriteLine("Четвертая четверть");
+}
+int a = new Random().Next(-10, 10);
+int b = new Random().Next(-10, 10);
+Console.WriteLine($"Случайная точка с координатой X {a}, Случайная точка с координатой Y {b}");
+PlaneSearch(a, b);
+*/
 //20. Задать номер четверти, показать диапазоны для возможных координат
-
+/*
+void PointSearch(int area)
+{
+    if (area == 1) Console.WriteLine("X (0;-N); Y (0;N)");
+    if (area==2) Console.WriteLine("X (-N;0); Y (0;N)");
+    if (area==3) Console.WriteLine("X (-N;0); Y (0;-N)");
+    if (area==4) Console.WriteLine("X (0;N); Y (0;-N)");
+}
+int a = new Random().Next(1,4);
+Console.WriteLine(a);
+PointSearch(a);
+*/
 //21. Программа проверяет пятизначное число на палиндромом.
 
 //22. Найти расстояние между точками в пространстве 2D/3D
