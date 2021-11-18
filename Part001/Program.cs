@@ -13,8 +13,12 @@ int b = a * a;
 Console.WriteLine(b);
 */
 //1. По двум заданным числам проверять является ли первое квадратом второго
- 
-
+/*
+int a1 = 36;
+int a2 = 6;
+if (a2 * a2 == a1) Console.WriteLine("yes");
+else Console.WriteLine("no");
+*/
 //2. Даны два числа. Показать большее и меньшее число 
 /*
 void Comparison(int a, int b)
@@ -46,7 +50,7 @@ else
     min = b;
 }
 
-Console.WriteLine($"max{max} min {min}");
+Console.WriteLine($"Максимальное число {max} Минимальное число {min}");
 */
 //3. По заданному номеру дня недели вывести его название
 /*
