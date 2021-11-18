@@ -1,30 +1,53 @@
-﻿// 21. Программа проверяет пятизначное число на палиндромом.
-/*bool Palindrom(int Check)
+﻿// Почувствуй себя сеньором
+
+// 31. Задать массив из 8 элементов и вывести их на экран 
+/*
+int[] Array = new  int [8];
+for(int i=0; i<=Array.Length; i++)
 {
-    string symbol = Convert.ToString(Check);
-    int Check1 = symbol[0];
-    int Check2 = symbol[1];
-    int Check3 = symbol[2];
-    int Check4 = symbol[3];
-    int Check5 = symbol[4];
-    if(Check1==Check5&&Check2==Check4) return true;
-    else return false;
+    int result = new Random().Next(10, 100);
+    Console.WriteLine(result);
 }
-int Rand = new Random().Next(10000,100000);
-Console.WriteLine(Rand);
-if(Palindrom(Rand)) System.Console.WriteLine("Палиндром!");
-else System.Console.WriteLine("Не палиндром!");
+*/
+// 32. Задать массив из 8 элементов, заполненных нулями и единицами вывести их на экран 
+/*int [] Array = new int [8];
+for(int i = 0; i<Array.Length; i++)
+{
+    int result = new Random().Next(0,2);
+    Console.WriteLine(result);
+}
+*/
+
+// 33. Задать массив из 12 элементов, заполненных числами из [0,9]. Найти сумму положительных/отрицательных элементов массива
+/*
+int[] array = new int[12];
+int j = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    int result = new Random().Next(0, 10);
+    Console.Write(result + " ");
+
+
+
+    if (result > 0)
+    {
+        j = result + j;
+        // result++;
+    }
+
+    Console.WriteLine(j);
+}
+*/
+
+// 34. Написать программу замену элементов массива на противоположные
+/*int[] Array = new int [1];
+//new Random().Next(0,100);
+for(int i =0; i<=Array.Length;i++)
+{
+    int result = new Random().Next(0,100); 
+    Console.WriteLine(result);
+    Console.WriteLine();
+    Console.WriteLine(result - (2*result));
+}
 */
  
-// 22. Найти расстояние между точками в пространстве 2D/3D
-
-
-// Почувствуй себя мидлом
-// 23. Показать таблицу квадратов чисел от 1 до N 
-// 24. Найти кубы чисел от 1 до N
-// 25. Найти сумму чисел от 1 до А
-// 26. Возведите число А в натуральную степень B используя цикл
-// 27. Определить количество цифр в числе
-// 28. Подсчитать сумму цифр в числе
-// 29. Написать программу вычисления произведения чисел от 1 до N
-// 30. Показать кубы чисел, заканчивающихся на четную цифру
