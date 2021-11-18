@@ -1,6 +1,80 @@
-﻿//14. Найти третью цифру числа или сообщить, что её нет
+﻿//11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+
+/* Ппервый способ
+int GetMaxSec(int section)
+{
+    int a = section % 10;
+    int b = section / 10;
+    if (a < b) return b;
+    else return a;
+}
+Console.Write("Введите число 10 до 99: ");
+int b = Convert.ToInt32(Console.ReadLine());
+int res = GetMaxSec(b);
+Console.WriteLine($"Наибольшее число {res}");
+*/
+//Способ 2
+/*char GetMaxNumber(int num)
+{
+    string ab = Convert.ToString(num);
+    char a = ab[0];
+    char b = ab[1];
+    if (a > b) return a;
+    else return b;
+}
+int num = new Random().Next(10, 100);
+char result = GetMaxNumber(num);
+Console.WriteLine($"В числе {num} наибольшая цифра - {result}");
+*/
+//12. Удалить вторую цифру трёхзначного числа
+//Первый способ
+/*int a = new Random().Next(100, 1000);
+Console.WriteLine(a);
+int b = a / 100;
+int c = a % 10;
+Console.WriteLine($"{b}{c}");
+*/
+
+//13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
 /*
-int n = new Random().Next(-1090,1000);
+int NF(int a, int b)
+
+{
+    int z = a % b;
+    int res = 0;
+    if (z == 0) return res;
+    else return z;
+}
+Console.WriteLine("Задайте число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число которое проверяете на кратность заданному: ");
+int i = Convert.ToInt32(Console.ReadLine());
+int j = NF(i, a);
+if (j == 0)
+    Console.WriteLine($"Число {a} кратно{i}");
+else Console.WriteLine($"{i} Не кратно {a} остаток {j}");
+*/
+/*int numberFirst=new Random().Next(100,1000);
+int numberSecond=new Random().Next(1,100);
+
+System.Console.WriteLine($"Делимое {numberFirst}");
+System.Console.WriteLine($"Делитель {numberSecond}");
+
+int withdrawRemainder( int numberFirst, int numberSecond)
+{
+if (numberFirst%numberSecond==0) System.Console.WriteLine("Кратно");
+
+else 
+{
+    int a= numberFirst%numberSecond;
+    return a;
+}
+}
+int result=withdrawRemainder ( numberFirst, numberSecond);
+System.Console.WriteLine($" Остаток {result}");*/
+
+//14. Найти третью цифру числа или сообщить, что её нет
+/*int n = new Random().Next(-1090,1000);
 Console.WriteLine(n);
 if(Math.Abs(n)<100) Console.WriteLine("Нет третьей цифры");
 else
@@ -18,19 +92,11 @@ Console.WriteLine($"Рандомное число {a}");
 Console.WriteLine(b);
 if (b == 0) Console.WriteLine($"Нет третьего ");
 */
-/*
-int numbers (int a) {
-    if (a < 0) {a = a*-1;}
-    if (a > 99) {return a = a % 1000 / 100;}
-    else {return a = -1;}
-}
-int randomNumb = new Random().Next(-100, 100);
-int valueArr = numbers(randomNumb);
-Console.Write($"Третья цифра числа {randomNumb}:\n {valueArr}");
-*/
+
 //Почувствуй себя джуном
 
 //15. Дано число. Проверить кратно ли оно 7 и 23 
+
 /*
 int a = new Random().Next(-1000, 1000);
 int ab = a % 7;
@@ -60,7 +126,9 @@ int b = 23;
 Console.WriteLine($"Случайное число {Zad}");
 CardinalityCheck(Zad, a, b);
 */
-//16. Дано число обозначающее день недели. Выяснить является номер дня недели выходным
+
+//16. Дано число обозначающее день недели. Выяснить является номер дня недели выходным 
+
 /*
 bool WekDay(int Check)
 {
@@ -72,7 +140,9 @@ Console.WriteLine($"Случайное число {Day}");
 if (WekDay(Day)) System.Console.WriteLine($"Выходной {Day} :)");
 else System.Console.WriteLine($"Будний {Day} :(");
 */
+
 //17. По двум заданным числам проверять является ли одно квадратом другого
+
 /*
 int a = 3;
 int b = 45;
@@ -94,13 +164,17 @@ int d = new Random().Next(1, 10000);
 Console.WriteLine($"Второе случайное число {d}");
 sqareCheck(c, d);
 */
+
 //18. Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
 /*
 bool x = false;
-bool y = false;
+bool y = true;
 if(!(x || y) == !x && !y)
 Console.WriteLine("Верно!");
-else Console.WriteLine("Не верно!");
+else
+{
+    Console.WriteLine("Не верно!");
+}
 */
 /*
 bool TrueOrNot(bool x, bool y)
@@ -115,6 +189,7 @@ else System.Console.WriteLine("Ложь");
 */
 
 //19. Определить номер четверти плоскости, в которой находится точка с координатами Х и У, причем X ≠ 0 и Y ≠ 0
+
 /*
 void PlaneSearch(int x, int y)
 {
@@ -128,7 +203,9 @@ int b = new Random().Next(-10, 10);
 Console.WriteLine($"Случайная точка с координатой X {a}, Случайная точка с координатой Y {b}");
 PlaneSearch(a, b);
 */
+
 //20. Задать номер четверти, показать диапазоны для возможных координат
+
 /*
 void PointSearch(int area)
 {
@@ -141,8 +218,3 @@ int a = new Random().Next(1,4);
 Console.WriteLine(a);
 PointSearch(a);
 */
-//21. Программа проверяет пятизначное число на палиндромом.
-
-
-
-//22. Найти расстояние между точками в пространстве 2D/3D
