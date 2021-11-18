@@ -148,11 +148,28 @@ for(int i = -n; i<=n; i++)
 Console.WriteLine(i);
 */
 //8. Показать четные числа от 1 до N 
-
+/*
+int A = new Random().Next(1, 30);
+for (int N = 1; N <= A; N++)
+{
+    if (N % 2 == 0) Console.Write($"{N} ");
+}
+*/
 //9. Показать последнюю цифру трёхзначного числа
+/*
+int randnum = new Random().Next(100, 1000);
+Console.WriteLine(randnum);
+int thirdnum = randnum % 10;
+Console.WriteLine(thirdnum);
+*/
 
 //10. Показать вторую цифру трёхзначного числа
-
+/*
+int randnum = new Random().Next(100, 1000);
+Console.WriteLine(randnum);
+int secnum = randnum / 10 % 10;
+Console.WriteLine(secnum);
+*/
 //11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
 
 /* Ппервый способ
