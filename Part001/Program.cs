@@ -107,8 +107,18 @@ int MaximumOfThree(int a, int b, int c)
 int result = MaximumOfThree(a, b, c);
 Console.WriteLine($"Максимальное число {result}");
 */
-//5. Написать программу вычисления значения функции y=f(a) 
 
+//5. Написать программу вычисления значения функции y=f(a)/ y=ka+m
+/*
+int f(int a, int k, int m)
+{
+    return k * a + m;
+}
+Console.WriteLine(f(5, 2, 8));
+
+if (18==f(5,2,8)) Console.WriteLine("Работает верно");
+else Console.WriteLine("Неверно");
+*/
 //6. Выяснить является ли число чётным
 /* 
 bool ParityCheck(int i)
