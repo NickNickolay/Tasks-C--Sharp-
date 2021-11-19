@@ -43,9 +43,9 @@ int N = 5;
 
 while (Chislo <= N)
 {
-    int Squarenum = Chislo * Chislo * Chislo;
+    int Cubenum = Chislo * Chislo * Chislo;
     Console.Write(Chislo + " " + "куб ");
-    Console.WriteLine(Squarenum);
+    Console.WriteLine(Cubenum);
     Chislo++;
 }
 
