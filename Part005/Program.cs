@@ -1,7 +1,8 @@
 ﻿// Почувствуй себя мидлом
 
 // 23. Показать таблицу квадратов чисел от 1 до N 
-
+// Первый способ
+/*
 void Squarenum(int n)
 {
     n = 0;
@@ -14,6 +15,8 @@ void Squarenum(int n)
 }
 Squarenum(10);
 
+//Второй способ
+
 int n = 0;
 while (n < 10)
 {
@@ -25,6 +28,8 @@ while (n < 10)
 
 }
 
+//Третий способ
+
 int Chislo = 1;
 int N = 5;
 
@@ -35,9 +40,10 @@ while (Chislo <= N)
     Console.WriteLine(Squarenum);
     Chislo++;
 }
-
+*/
 // 24. Найти кубы чисел от 1 до N
-
+// Первый способ
+/*
 int Chislo = 1;
 int N = 5;
 
@@ -48,9 +54,23 @@ while (Chislo <= N)
     Console.WriteLine(Cubenum);
     Chislo++;
 }
-
+*/
+// Второй способ 
+/*
+void CubeNumbers(int n)
+{
+    n = 0;
+    while (n < 15)
+    {
+        n++;
+        int ourNum = n * n * n;
+        System.Console.WriteLine($"Число, куб которого мы выводим {n}, собственно куб этого числа {ourNum}");
+    }
+}
+CubeNumbers(15);
+*/
 // 25. Найти сумму чисел от 1 до А
-
+/*
 int num = 1;
 int A = 5;
 int sum = 0;
@@ -58,13 +78,13 @@ while (num <= A)
 {
 
     sum = sum + num;
-    System.Console.Write(num + " ");
+    System.Console.Write($"{num} ");
     num++;
 }
-Console.WriteLine($" сумма чисел {sum}");
-
+Console.WriteLine($" Сумма всех этих чисел {sum}");
+*/
 // 26. Возведите число А в натуральную степень B используя цикл
-
+/*
 int transformation(int a, int b)
 {
     int res = 1;
@@ -76,26 +96,34 @@ int transformation(int a, int b)
     return res;
 }
 
-if (256 == transformation(2, 8))
-{
-    Console.WriteLine("Работает");
-}
-else
-{
-    Console.WriteLine("Не работает");
-}
+if (64 == transformation(2, 6))    Console.WriteLine("Работает");
+
+else    Console.WriteLine("Не работает");
+*/
 
 
 // 27. Определить количество цифр в числе
-
-int num = 543476;
-int Numsymbol = 1;
-for (Numsymbol = 1; Numsymbol < num; Numsymbol++)
+//Пурвый способ
+/*
+int num = 55657657;
+System.Console.Write($"Число {num}");
+int Numsymbol = 0;
+for (Numsymbol = 0; num != 0; Numsymbol++)
 {
     num = num / 10;
 
 }
-Console.WriteLine($"Число состоит из {Numsymbol}  символов");
-
-
+Console.WriteLine($"состоит из {Numsymbol}  символов");
+*/
+//Второй способ
+/*
+int N = new Random().Next();
+int symbol = 0;
+while (symbol < N)
+{
+    N = N / 10;
+    symbol++;
+}
+System.Console.WriteLine($"{N} состоит из {symbol} символов");
+*/
 
