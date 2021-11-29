@@ -1,5 +1,37 @@
 ﻿// 28. Подсчитать сумму цифр в числе
+/*
+int GetSumDigit(int a)
+{
+    int sum = 0;
+
+    while (a > 0)
+    {
+        sum = sum + (a % 10); //  3 // 5// 6
+        a = a / 10;           // 12 // 1//0
+    }
+    return sum;
+}
+int rnd = 123; //new Random().Next();
+int sum = GetSumDigit(rnd);
+System.Console.WriteLine(sum);
+*/
+
 // 29. Написать программу вычисления произведения чисел от 1 до N
+
+int GetMultipl(int N)
+{
+    int a = 1;
+    for (int i = 1; i <= N; i++)
+    {
+        a = a * i;   // a=1;a=2;a=6;
+    }
+    return a;
+}
+int b = new Random().Next(1, 7);
+int res = GetMultipl(b);
+System.Console.WriteLine($"Произведение чисел от 1 до {b} = {res}");
+
+
 // 30. Показать кубы чисел, заканчивающихся на четную цифру
 
 
