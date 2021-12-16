@@ -17,7 +17,7 @@ System.Console.WriteLine(sum);
 */
 
 // 29. Написать программу вычисления произведения чисел от 1 до N
-
+/*
 int GetMultipl(int N)
 {
     int a = 1;
@@ -30,7 +30,7 @@ int GetMultipl(int N)
 int b = new Random().Next(1, 7);
 int res = GetMultipl(b);
 System.Console.WriteLine($"Произведение чисел от 1 до {b} = {res}");
-
+*/
 
 // 30. Показать кубы чисел, заканчивающихся на четную цифру
 
